@@ -1,0 +1,90 @@
+print(r'''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\ ` . "-._ /_______________|_______
+|                   | |o ;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the island and the treasure.")
+
+left_or_right = input('''
+Would you like to left (L) or right (R) ''')
+
+if left_or_right == "L":
+    print('''
+    Phew! Well done! You've made it to a desert. A mysterious woman on a camel asked you if you'd like a bottle of water, but there's a catch. 
+    If you take it, you won't be able to get a ride back home but the water might be enough to make the journey. 
+    If you don't take it, you'll be left with a way to get back and a map, but you'll have to figure out how to ride a camel and you may get dehydrated.
+    ''')
+    water_or_camel = input('''
+    Would you like to take the water (W) or the camel (C)
+    ''')
+    if water_or_camel == "W":
+        print('''
+        The water was just enough to get you to the nearest city! There were two men who both knew how to get to the treasure.
+        The first man was offering a safer route, however this route would take much longer and would be more expensive.
+        The second man had a much faster and cheaper route, but it's far far more dangerous.
+        
+        ''')
+        safe_or_risky = input('''
+        Would you like to go the safe route (S) or the risky route (R)
+        ''')
+        if safe_or_risky == "S":
+            print('''
+            You made it to a small town just a few hundred meters away from the treasure!
+            The mayor saw you and decided to welcome you! When you told him you plan to get the treasure, he offered you a proposition.
+            He would have local treasure hunters get the treasure for you if you gave him the map, in exchange they'd get a small portion.
+            If you take him up on his offer, you'd have to trust his word but you would be guaranteed safety.
+            If you decide to find the treasure yourself, you'd get it all but may die to a booby trap trying.
+            ''')
+            try_or_trust = input('''
+            Do you want to take his offer (Y) or do it yourself (N)? 
+            ''')
+            if try_or_trust == "N":
+                print('''
+                You made your journey to the treasure and found a temple. In the temple were 3 doors.''')
+                red_green_or_blue = input('''
+                One was red (R), one was green (G), and one was blue (B). Which one do you choose?
+                ''')
+                if red_green_or_blue == "B":
+                    print('''
+                    You found the treasure!
+                    ''')
+                elif red_green_or_blue == "G":
+                    print('''
+                    Game over! You entered a cave and got bitten by a poisonous snake.
+                    ''')
+                else: print('''
+                Game over! You fell in lava.
+                ''')
+            else:
+                print('''
+                Game over! The mayor scammed you and you went home.
+                ''')
+        else:
+            print('''
+            Game over! You were greedy and made a risky jump trying to save time but you ended up plummeting for 30 seconds straight...
+            ''')
+    else: print('''
+    Game over! You tried to ride the camel but it threw you off and you hit your head on a rock and died.
+    ''')
+else:
+    print('''
+    Game over! You were captured by bandits and they'd only let you go home if you told gave them your treasure map...
+    ''')
