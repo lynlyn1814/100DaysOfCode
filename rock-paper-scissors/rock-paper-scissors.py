@@ -52,8 +52,6 @@ elif user_choice == "1":
     user_choice = options[1]
 elif user_choice == "2":
     user_choice = options[2]
-else:
-    print("Something went wrong...")
 
 # Generating the computer's choice
 computer_choice = random.choice(options)
@@ -65,8 +63,6 @@ elif computer_choice == options[1]:
     print(f"\nComputer chose: {paper}\n")
 elif computer_choice == options[2]:
     print(f"\nComputer chose: {scissors}\n")
-else:
-    print("Something went wrong...")
 
 # Printing the user's choice
 if user_choice == options[0]:
@@ -75,8 +71,6 @@ elif user_choice == options[1]:
     print(f"You chose: {paper}")
 elif user_choice == options[2]:
     print(f"You chose: {scissors}")
-else:
-    print("Something went wrong...")
 
 # Determining and printing the winner along with some ASCII art
 
@@ -87,8 +81,6 @@ if user_choice == options[0]:
         print(f"{trophy}\n{you_won}")
     else:
         print(its_a_tie)
-else:
-    print("Something went wrong...")
 
 if user_choice == options[1]:
     if computer_choice == options[2]:
@@ -97,8 +89,6 @@ if user_choice == options[1]:
         print(f"{trophy}\n{you_won}")
     else:
         print(its_a_tie)
-else:
-    print("Something went wrong...")
 
 if user_choice == options[2]:
     if computer_choice == options[0]:
@@ -107,5 +97,3 @@ if user_choice == options[2]:
         print(f"{trophy}\n{you_won}")
     else:
         print(its_a_tie)
-else:
-    print("Something went wrong...")
